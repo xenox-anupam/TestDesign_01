@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color:rgb(27, 26, 26)
+}
+
+#main{
+    height: 100%;
+    width:100%;
+    background-color:rgb(27, 26, 26)
+}
+#nav{
+    height:70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    gap: 20px;
+}
+#navLeft,
+#navCenter,
+#navRight{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+#navLeft h1{
+    margin: 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+#navLeft img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: block;
+}
+#navCenter{
+    gap: 24px;
+    justify-content: space-around;
+}
+#navCenter h1{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+#navRight{
+    gap: 10px;
+}
+#nav #navRight i{
+    color: white;
+    font-size: 28px;
+}
+#nav #navRight button{
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+#content{
+    width: 100%;
+    height:calc(100% - 70px);
+    /* background-color: rgb(0, 208, 255); */
+    display: flex;
+    /* position: relative; */
+}
+#content .left{
+    height: 100%;
+    width: 30%;
+    /* background-color: rgb(255, 140, 0); */
+}
+#content .left h1{
+    margin-top: 30%;
+    margin-left:10%;
+    padding-right: 10%;
+    color:white;
+    font-size: 100px;
+    font-weight:600;
+}
+#content .left p{
+    margin-top:24px;
+    margin-left:10%;
+    color:white;
+    font-size: 12px;
+    font-weight:600;
+    padding-right: 10%;
+    filter:opacity(.6);
+    line-height: 1.2;
+    margin-bottom: 48px;
+}
+#content .left button{
+    margin-top: 24px;
+    background-color: #dcdfe2;
+    color: black;
+    padding: 10px 48px;
+    margin-left: 10%;
+    border-radius: 50px;
+    font-weight: 900;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: none;
+}
+#content .center{
+    margin-left: 5%;
+    margin-top: 7%;
+    height: 76%;
+    width: 30%;
+    background-image: url(https://wallpapercave.com/wp/wp11134540.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+    /* arched top */
+    border-top-left-radius:50%;
+    border-top-right-radius: 50%;
+}
+
+#content .center::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.18);
+    backdrop-filter: blur(1.5px) brightness(0.78);
+    -webkit-backdrop-filter: blur(1.5px) brightness(0.78);
+    pointer-events: none;
+}
+
+#centerImage{
+    position: absolute;
+    top: 22.5%;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 50%;
+    max-height: 140%;
+    z-index: 9999;
+}
+
+#centerImage img{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+#content .right{
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgb(255, 140, 0); */
+}
+#content .right h1{
+    color:white;
+    font-size: 50px;
+    font-weight:600;
+    filter:opacity(.8);
+}
+#content .right h2{
+    color:white;
+    font-size: 20px;
+    font-weight:600;
+    filter:opacity(.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.429);
+}
+#content .right i{
+    margin-left: 150px;
+    color:white;
+    font-size: 10px;
+    font-weight:600;
+    filter:opacity(.6);
+}
